@@ -25,3 +25,47 @@ https://dataintensive.net/
 4 OS three easy pieces
 
 https://pages.cs.wisc.edu/~remzi/OSTEP/
+
+5 Concurrency-interest -- Discussion list for JSR-166
+JSR-166 设计思路和问题讨论邮件
+http://cs.oswego.edu/mailman/listinfo/concurrency-interest
+
+6 Kenneth P. Birman
+
+作者网站 https://www.cs.cornell.edu/ken/
+
+Amazon的CTO Werner Vogels 在2004年加入amazon之前在cornell这边做分布式系统研究。
+
+作者写的书： Guide to Reliable Distributed Systems: Building High-Assurance Applications and Cloud-Hosted Services 
+
+作者开的一个关于云计算的课程
+Topics in Cloud Computing
+
+https://www.cs.cornell.edu/courses/cs5412/2021sp/
+
+
+7 Java Concurrency in Practice
+https://jcip.net/
+https://jcip.net/listings/ConcurrentStack.java
+
+8 Eric Brewer
+Google Fellow & VP Infrastructure  CAP原理提出者
+
+主页https://people.eecs.berkeley.edu/~brewer/
+
+Advanced Topics in Computer Systems 
+https://people.eecs.berkeley.edu/~brewer/cs262/
+
+主页有许多分布式系统的paper可以看看比如
+Harvest, Yield, and Scalable Tolerant Systems
+Towards Robust Distributed Systems
+
+9 Pat Helland 
+Life Beyond Distributed Transactions an Apostate’s Opinion
+http://cidrdb.org/
+
+
+
+
+
+
