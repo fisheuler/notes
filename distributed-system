@@ -77,4 +77,15 @@ Advanced Topics in Computer Systems (Spring 2020)
 https://deculler.github.io/cs262b-sp20/
 
 
+11 FoundationDB: A Distributed Unbundled Transactional Key Value Store
+
+https://apple.github.io/foundationdb/read-write-path.html#components
+
+中间用到的隔离级别参考 Serializable Snapshot Isolation in PostgreSQL
+
+https://www.postgresql.org/list/pgsql-hackers/
+
+
+
+
 
