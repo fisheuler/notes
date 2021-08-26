@@ -65,7 +65,10 @@ Life Beyond Distributed Transactions an Apostate’s Opinion
 http://cidrdb.org/
 
 
-10 
+10 Ion Stoica
+
+https://people.eecs.berkeley.edu/~istoica/
+
 Big Data System research: Trends and Challenges
 
 https://people.eecs.berkeley.edu/~istoica/classes/cs294/15/
@@ -95,4 +98,58 @@ http://cs.brown.edu/courses/csci1380/s21/syllabus.html
 13 A better Kubernetes, from the ground up
 https://blog.dave.tf/post/new-kubernetes/
 https://news.ycombinator.com/item?id=27903720
+
+
+14 Operating Systems: Three Easy Pieces
+https://pages.cs.wisc.edu/~remzi/OSTEP/
+https://pages.cs.wisc.edu/~remzi/
+https://research.cs.wisc.edu/adsl/
+
+
+15 Graduate Advanced Operating Systems & Distributed Systems
+https://www.cs.cmu.edu/afs/cs/academic/class/15712-s19/www/syllabus.html
+https://www.cs.cmu.edu/~dga/
+
+
+16 Distributed Systems
+
+https://pages.cs.wisc.edu/~remzi/Classes/739/Fall2018/
+
+
+17 AI-Sys Spring 2019
+
+https://ucbrise.github.io/cs294-ai-sys-sp19/
+
+
+18  SOSP History Day
+https://www.sigops.org/s/conferences/sosp/2015/history/
+
+
+19 Designs, Lessons and Advice from Building Large Distributed Systems
+
+https://research.cs.cornell.edu/ladis2009/talks/dean-keynote-ladis2009.pdf
+
+
+20 Principles of Data-Intensive Systems
+http://web.stanford.edu/class/cs245/
+https://cs.stanford.edu/~matei/
+
+21 Lessons from Internet Services: ACID vs. BASE
+
+
+
+
+SOSP/OSDI Hall of Fame
+https://www.cs.utexas.edu/~vijay/hall.html
+
+https://csrankings.org/#/index?none&us
+
+The Mark Weiser Award
+https://www.sigops.org/awards/mw/
+
+
+
+
+
+
 
