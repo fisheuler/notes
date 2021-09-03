@@ -8,4 +8,43 @@
 
 5 Scalable,Distributed Data Structures for Internet Service Construction
 
-6 
+6 SEDA: An Architecture for Well-Conditioned, Scalable Internet Services
+
+7 A Design Framework for Highly Concurrent Systems
+
+8 Wormhole: Reliable Pub-Sub to Support  Geo-replicated Internet Services
+
+https://www.usenix.org/system/files/conference/nsdi15/nsdi15-paper-sharma.pdf
+
+9 RAMP-TAO: Layering Atomic Transactions on Facebook’s Online TAO Data Store
+https://engineering.fb.com/2021/08/18/core-data/ramp-tao/
+
+
+10 TAO: Facebook’s Distributed Data Store for the Social Graph
+https://www.usenix.org/system/files/conference/atc13/atc13-bronson.pdf
+
+https://engineering.fb.com/2013/06/25/core-data/tao-the-power-of-the-graph/
+
+
+11 Challenges to Adopting Stronger Consistency at Scale
+https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-ajoux.pdf
+
+12 The Dataflow Model: A Practical Approach to Balancing Correctness, Latency, and Cost in Massive-Scale, Unbounded, Out-of-Order Data Processing
+https://cs.stanford.edu/~matei/courses/2015/6.S897/readings/google-dataflow.pdf
+
+13 Social Networking at Scale 
+
+https://cs.stanford.edu/~matei/courses/2015/6.S897/readings/facebook-hpca2012.pdf
+
+14 Lessons from Internet Services: ACID vs. BASE
+http://www09.sigmod.org/disc/disc99/disc/nsf_acad_ind/brewer/
+
+15 MyRocks: LSM-Tree Database Storage Engine Serving Facebook's Social Graph
+
+http://www.vldb.org/pvldb/vol13/p3217-matsunobu.pdf
+
+16 Unicorn: A System for Searching the Social Graph
+
+http://www.vldb.org/pvldb/vol6/p1150-curtiss.pdf
+
+
