@@ -1,10 +1,8 @@
 1 Revisiting the Relationship Between Non-blocking Atomic Commitment and Consensus
 
-2 https://www.usenix.org/conferences/test-of-time-awards
+2 Parallel Database Systems: The Future of High Performance Database Processing
 
-3 https://www.usenix.org/conferences/best-papers
-
-4 https://www.aminer.cn/bestpaper
+3  Megastore: Providing Scalable, Highly Available Storage for Interactive Services
 
 5 Scalable,Distributed Data Structures for Internet Service Construction
 
@@ -46,5 +44,10 @@ http://www.vldb.org/pvldb/vol13/p3217-matsunobu.pdf
 16 Unicorn: A System for Searching the Social Graph
 
 http://www.vldb.org/pvldb/vol6/p1150-curtiss.pdf
+
+
+
+
+
 
 
