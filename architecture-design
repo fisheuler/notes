@@ -9,3 +9,46 @@ https://people.eecs.berkeley.edu/~brewer/papers/GiantScale-IEEE.pdf
 
 4 Lessons from Internet Services: ACID vs. BASE
 http://www09.sigmod.org/disc/disc99/disc/nsf_acad_ind/brewer/
+
+5 阿里盒马领域驱动设计实践
+https://www.infoq.cn/article/alibaba-freshhema-ddd-practice/
+
+6 微信红包
+https://www.infoq.cn/article/1-billion-bonus-from-the-clouds/
+https://www.infoq.cn/article/2017hongbao-weixin/
+https://www.infoq.cn/news/qq-web-system-practise
+
+7 ebay architecture
+https://www.yeeach.com/post/133
+
+8 软件实践碎碎念
+https://github.com/oldratlee/software-practice-thoughts/blob/master/broken-thoughts/README.md
+
+平台产品逻辑与执行
+https://github.com/oldratlee/software-practice-thoughts/blob/master/product-logic-for-platform-product/README.md
+
+多响应异步请求模式下需求满足的分析模型
+https://github.com/oldratlee/software-practice-thoughts/blob/master/multi-response-async-request-pattern-analysis-model/README.md
+
+
+
+9 https://en.jinzhao.wiki/wiki/Outline_of_software_engineering
+
+10 https://en.jinzhao.wiki/wiki/Software_architecture
+
+11 https://en.jinzhao.wiki/wiki/Software_design
+
+12 https://en.jinzhao.wiki/wiki/Shard_(database_architecture)#cite_note-25
+
+13 https://en.jinzhao.wiki/wiki/Transaction_processing
+
+14 https://en.jinzhao.wiki/wiki/Software_design_pattern
+
+15 https://en.jinzhao.wiki/wiki/Proactor_pattern
+
+16 https://en.jinzhao.wiki/wiki/Reactor_pattern
+
+17 https://en.jinzhao.wiki/wiki/Architectural_pattern
+
+18 https://en.jinzhao.wiki/wiki/Programming_paradigm
+
