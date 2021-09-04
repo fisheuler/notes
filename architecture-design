@@ -1,0 +1,11 @@
+1  Randy Shoup and Dan Pritchett 
+The eBay Architecture -- Striking a Balance between Site Stability, Feature Velocity, Performance, and Cost
+
+2 Welsh
+SEDA: An Architecture for Well-Conditioned, Scalable Internet Services
+
+3 Lessons from Giant-Scale Services
+https://people.eecs.berkeley.edu/~brewer/papers/GiantScale-IEEE.pdf
+
+4 Lessons from Internet Services: ACID vs. BASE
+http://www09.sigmod.org/disc/disc99/disc/nsf_acad_ind/brewer/
