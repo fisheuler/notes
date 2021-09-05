@@ -57,3 +57,6 @@ http://www.vldb.org/pvldb/vol6/p1150-curtiss.pdf
 1 Google Percolator 的事务模型
 http://andremouche.github.io/transaction/percolator.html
 
+2 《HotRing: A Hotsport-Aware In-Memory Key-Value Store》
+https://jiekun.dev/posts/hotring/
+https://xuzuguang.men/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/2020/01/15/HotRing/
