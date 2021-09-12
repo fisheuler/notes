@@ -35,5 +35,18 @@ https://en.jinzhao.wiki/wiki/CoDel
 15 https://www.scylladb.com/2018/01/07/cost-of-avoiding-a-meltdown/
 
 
+16 AIO is a horrible ad-hoc design, with the main excuse being "other,
+less gifted people, made that design, and we are implementing it for
+compatibility because database people - who seldom have any shred of
+taste - actually use it".
+
+
+https://lwn.net/Articles/671657/
+
+17 https://news.ycombinator.com/user?id=ChuckMcM
+
+https://news.ycombinator.com/favorites?id=ChuckMcM&p=2
+
+
 
 
