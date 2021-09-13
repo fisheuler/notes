@@ -1,20 +1,42 @@
 1 https://news.ycombinator.com/item?id=9045125
 Nginx optimization: Understanding sendfile, tcp_nodelay and tcp_nopush 
 
-To avoid network congestion, the TCP stack implements a mechanism that waits for the data up to 0.2 seconds so it won’t send a packet that would be too small. This mechanism is ensured by Nagle’s algorithm, and 200ms is the value of the UNIX implementation.
-Sigh. If you're doing bulk file transfers, you never hit that problem. If you're sending enough data to fill up outgoing buffers, there's no delay. If you send all the data and close the TCP connection, there's no delay after the last packet. If you do send, reply, send, reply, there's no delay. If you do bulk sends, there's no delay. If you do send, send, reply, there's a delay.
+To avoid network congestion, the TCP stack implements a mechanism that waits for the data up to 0.2 seconds so it won’t send a packet that would be too small. 
+This mechanism is ensured by Nagle’s algorithm, and 200ms is the value of the UNIX implementation.
 
-The real problem is ACK delays. The 200ms "ACK delay" timer is a bad idea that someone at Berkeley stuck into BSD around 1985 because they didn't really understand the problem. A delayed ACK is a bet that there will be a reply from the application level within 200ms. TCP continues to use delayed ACKs even if it's losing that bet every time.
+Sigh. If you're doing bulk file transfers, you never hit that problem. If you're sending enough data to fill up outgoing buffers, there's no delay. 
+If you send all the data and close the TCP connection, there's no delay after the last packet. If you do send, reply, send, reply, there's no delay. 
+If you do bulk sends, there's no delay. If you do send, send, reply, there's a delay.
+
+The real problem is ACK delays. The 200ms "ACK delay" timer is a bad idea that someone at Berkeley stuck into BSD around 1985 because they didn't 
+really understand the problem. A delayed ACK is a bet that there will be a reply from the application level within 200ms. 
+TCP continues to use delayed ACKs even if it's losing that bet every time.
 
 If I'd still been working on networking at the time, that never would have happened. But I was off doing stuff for a startup called Autodesk.
 
 John Nagle
 
-Yes, it's me. I did my networking work at Ford Aerospace in the early 1980s. But I left in 1986. It still bothers me that the Nagle algorithm (which I called tinygram prevention) and delayed ACKs interact so badly.
-That fixed 200ms ACK delay timer was a horrible mistake. Why 200ms? Human reaction time. That idea was borrowed from X.25 interface devices, where it was called an "accumulation timer". The Berkeley guys were trying to reduce Telnet overhead, because they had thousands of students using time-sharing systems from remote dumb terminals run through Telnet gateways. So they put in a quick fix specific to that problem. That's the only short fixed timer in TCP; everything else is geared to some computed measure such as round trip time.
 
-Today, I'd just turn off ACK delay. ACKs are tiny and don't use much bandwidth, nobody uses Telnet any more, and most traffic is much heavier in one direction than the other. The case in which ACK delay helps is rare today. An RPC system making many short query/response calls might benefit from it; that's about it. A smarter algorithm in TCP might turn on ACK delay if it notices it's sending a lot of ACKs which could have been piggybacked on the next packet, but having it on all the time is no longer a good thing.
 
-If you turn off the Nagle algorithm and then rapidly send single bytes to a socket, each byte will go out as a separate packet. This can increase traffic by an order of magnitude or two, with throughput declining accordingly. If you turn off delayed ACKs, traffic in the less-busy direction may go up slightly. That's why it's better to turn off delayed ACKs, if that's available.
+Yes, it's me. I did my networking work at Ford Aerospace in the early 1980s. But I left in 1986. It still bothers me that 
+the Nagle algorithm (which I called tinygram prevention) and delayed ACKs interact so badly.
+That fixed 200ms ACK delay timer was a horrible mistake. Why 200ms? Human reaction time. 
+That idea was borrowed from X.25 interface devices, where it was called an "accumulation timer". 
+The Berkeley guys were trying to reduce Telnet overhead, because they had thousands of students 
+using time-sharing systems from remote dumb terminals run through Telnet gateways. 
+So they put in a quick fix specific to that problem. That's the only short fixed timer in TCP;
+everything else is geared to some computed measure such as round trip time.
 
-One of the few legit cases for turning off the Nagle algorithm is for a FPS game running over the net. There, one-way latency matters; getting your shots and moves to the server before the other players affects gameplay. For almost everything else, it's round-trip time that matters, not one-way.
+Today, I'd just turn off ACK delay. ACKs are tiny and don't use much bandwidth, nobody uses Telnet any more, 
+and most traffic is much heavier in one direction than the other. The case in which ACK delay helps is rare today. 
+An RPC system making many short query/response calls might benefit from it; that's about it. 
+A smarter algorithm in TCP might turn on ACK delay if it notices it's sending a lot of ACKs which could have been 
+piggybacked on the next packet, but having it on all the time is no longer a good thing.
+
+If you turn off the Nagle algorithm and then rapidly send single bytes to a socket, each byte will go out as a separate packet. 
+This can increase traffic by an order of magnitude or two, with throughput declining accordingly. 
+If you turn off delayed ACKs, traffic in the less-busy direction may go up slightly. That's why it's better to turn off delayed ACKs, if that's available.
+
+One of the few legit cases for turning off the Nagle algorithm is for a FPS game running over the net. There, one-way latency matters; 
+getting your shots and moves to the server before the other players affects gameplay. 
+For almost everything else, it's round-trip time that matters, not one-way.
