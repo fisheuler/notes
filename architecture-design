@@ -31,7 +31,6 @@ https://github.com/oldratlee/software-practice-thoughts/blob/master/product-logi
 https://github.com/oldratlee/software-practice-thoughts/blob/master/multi-response-async-request-pattern-analysis-model/README.md
 
 
-
 9 https://en.jinzhao.wiki/wiki/Outline_of_software_engineering
 
 10 https://en.jinzhao.wiki/wiki/Software_architecture
@@ -51,4 +50,36 @@ https://github.com/oldratlee/software-practice-thoughts/blob/master/multi-respon
 17 https://en.jinzhao.wiki/wiki/Architectural_pattern
 
 18 https://en.jinzhao.wiki/wiki/Programming_paradigm
+
+
+19 Stack Overflow: The Architecture - 2016 Edition
+https://nickcraver.com/blog/2016/02/17/stack-overflow-the-architecture-2016-edition/#web-tier-iis-85-aspnet-mvc-523-and-net-461
+
+20 Performance is a Feature
+https://blog.codinghorror.com/performance-is-a-feature/
+
+21 YSlow: Yahoo's Problems Are Not Your Problems
+
+https://blog.codinghorror.com/yslow-yahoos-problems-are-not-your-problems/
+
+22 Best Practices for Speeding Up Your Web Site
+https://developer.yahoo.com/performance/rules.html
+
+23 How we upgrade a live data center
+
+https://blog.serverfault.com/2015/03/05/how-we-upgrade-a-live-data-center/
+
+
+24 An Updated Guide on Where to Apply for a PhD in Databases in the US (2018)
+
+http://www.cs.cmu.edu/~pavlo/blog/2018/11/an-updated-guide-on-where-to-apply-for-a-phd-in-databases-in-the-us-2018.html
+http://www.hyper-db.de/
+
+24 An Overview of End-to-End Exactly-Once Processing in Apache Flink
+
+https://www.ververica.com/blog/end-to-end-exactly-once-processing-apache-flink-apache-kafka
+
+
+25 How Stack Overflow plans to survive the next DNS attack
+https://blog.serverfault.com/2017/01/09/surviving-the-next-dns-attack/
 
