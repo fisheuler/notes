@@ -70,10 +70,6 @@ https://developer.yahoo.com/performance/rules.html
 https://blog.serverfault.com/2015/03/05/how-we-upgrade-a-live-data-center/
 
 
-24 An Updated Guide on Where to Apply for a PhD in Databases in the US (2018)
-
-http://www.cs.cmu.edu/~pavlo/blog/2018/11/an-updated-guide-on-where-to-apply-for-a-phd-in-databases-in-the-us-2018.html
-http://www.hyper-db.de/
 
 24 An Overview of End-to-End Exactly-Once Processing in Apache Flink
 
@@ -82,4 +78,29 @@ https://www.ververica.com/blog/end-to-end-exactly-once-processing-apache-flink-a
 
 25 How Stack Overflow plans to survive the next DNS attack
 https://blog.serverfault.com/2017/01/09/surviving-the-next-dns-attack/
+
+26 业务核心数据库架构演变——权衡取舍的艺术
+
+https://jiekun.dev/posts/db-partitioning/
+
+27 What’s SAP?
+https://retool.com/blog/erp-for-engineers/
+
+28 http://www.cdk5.net/security/Ed3/Millicent.pdf
+http://www.cdk5.net/networking/Ed4/ATM.pdf
+
+29 https://danluu.com/programming-blogs/
+
+
+30 https://ably.com/blog/what-is-a-distributed-systems-engineer
+
+31 ES写入过程
+https://elasticsearch.cn/article/13533
+
+32 Why Software Architects Must Be Involved in the Earliest Systems Engineering Activities
+
+https://insights.sei.cmu.edu/blog/why-software-architects-must-be-involved-in-the-earliest-systems-engineering-activities/
+
+
+
 
