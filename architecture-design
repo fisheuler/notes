@@ -124,5 +124,17 @@ https://www.yarchive.net/
 37 Why Is SQLite Coded In C
 https://www.sqlite.org/whyc.html#why_isn_t_sqlite_coded_in_a_safe_language_
 
+38 first commit of SQLite and timeline of SQLite commit history
+
+https://www.sqlite.org/src/timeline?u=drh&c=2000-05-29+14%3A26%3A00&y=a
+
+https://www.sqlite.org/src/info/6f3655f79f9b6fc9
+
+https://www.sqlite.org/src/timeline
+
+
+
+39  Atomic Commit In SQLite
+https://www.sqlite.org/atomiccommit.html
 
 
