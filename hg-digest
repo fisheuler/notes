@@ -40,3 +40,30 @@ If you turn off delayed ACKs, traffic in the less-busy direction may go up sligh
 One of the few legit cases for turning off the Nagle algorithm is for a FPS game running over the net. There, one-way latency matters; 
 getting your shots and moves to the server before the other players affects gameplay. 
 For almost everything else, it's round-trip time that matters, not one-way.
+
+
+
+2 https://news.ycombinator.com/item?id=16585120
+Why Is SQLite Coded in C? (2017)
+
+jerf on Mar 14, 2018
+
+I've commented several times before that I consider "C" and "C with analysis backing" to be in practice two different languages. 
+SQLite is the latter: https://sqlite.org/testing.html Writing SQLite in "plain C" without all that would, well, simply not work.
+
+I agree that "C with analysis backing" is the best language for SQLite right now. However, it should not be used as an example 
+of "How C is a great language for programming in" unless you are also planning on skillfully using a very significant subset 
+of the tools listed in that document. SQLite doesn't prove C is great; it demonstrates how much additional scaffolding is necessary 
+to wrap around C to get that level of quality, and given the quantity and diversity of tools we are talking about, 
+it is not particularly complimentary to "plain C".
+
+
+	
+pcwalton on Mar 14, 2018
+
+I agree. SQLite gets away with using C because it literally uses military-grade levels of verification. As John Regehr pointed out, 
+SQLite is quite possibly the only piece of software that goes to that level of validation and testing without being required to by law.
+It's not just a matter of skill, either. The cost in terms of money and time needed to develop software in that way is completely impractical 
+in almost any commercial scenario. Aside from some very specific situations, it's not an economically viable way to produce software.
+
+
