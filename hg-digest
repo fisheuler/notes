@@ -45,6 +45,9 @@ For almost everything else, it's round-trip time that matters, not one-way.
 
 2 https://news.ycombinator.com/item?id=16585120
 Why Is SQLite Coded in C? (2017)
+https://sqlite.org/testing.html
+https://www.sqlite.org/whyc.html#why_isn_t_sqlite_coded_in_a_safe_language_
+
 
 jerf on Mar 14, 2018
 
