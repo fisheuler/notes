@@ -1,0 +1,13 @@
+1 Realtime preemption locking code merged
+
+Merge tag 'locking-core-2021-08-30' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip
+
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=e5e726f7bb9f
+
+2 5.15 Merge window, part 1
+https://lwn.net/Articles/867821/
+
+3 Descriptorless files for io_uring
+https://lwn.net/Articles/863071/
+
+4 
