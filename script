@@ -33,6 +33,7 @@ find /full_path -path '*/.*' -prune -o -type f -print | zip ~/file.zip -@
 
 3 https://askubuntu.com/questions/660846/how-to-zip-and-unzip-a-directory-and-its-files-in-linux?noredirect=1
 
+
 tar -cvzf may_arch.tar.gz my_folder
 
 where
@@ -96,4 +97,5 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 https://askubuntu.com/questions/777049/how-do-i-zip-up-multiple-files-on-command-line
 
 
+https://apple.stackexchange.com/questions/225241/batch-compress-multiple-folders-into-individual-zip-files
 
