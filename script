@@ -1,0 +1,23 @@
+1  get dir size
+https://stackoverflow.com/questions/1019116/using-ls-to-list-directories-and-their-total-sizes
+
+https://unix.stackexchange.com/questions/185764/how-do-i-get-the-size-of-a-directory-on-the-command-line
+
+
+Try something like:
+
+du -sh *
+short version of:
+
+du --summarize --human-readable *
+Explanation:
+du: Disk Usage
+
+-s: Display a summary for each specified file. (Equivalent to -d 0)
+
+-h: "Human-readable" output. Use unit suffixes: Byte, Kibibyte (KiB), Mebibyte (MiB), Gibibyte (GiB), Tebibyte (TiB) and Pebibyte (PiB). (BASE2)
+
+Also -c (produce a grand total) is nice
+
+2 
+
