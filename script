@@ -19,5 +19,81 @@ du: Disk Usage
 
 Also -c (produce a grand total) is nice
 
-2 
+
+2 zip file
+
+How can I create a zip archive of a whole directory via terminal without hidden files?
+https://askubuntu.com/questions/58889/how-can-i-create-a-zip-archive-of-a-whole-directory-via-terminal-without-hidden
+
+
+This also excludes hidden files in unhidden directories:
+
+find /full_path -path '*/.*' -prune -o -type f -print | zip ~/file.zip -@
+
+
+3 https://askubuntu.com/questions/660846/how-to-zip-and-unzip-a-directory-and-its-files-in-linux?noredirect=1
+
+tar -cvzf may_arch.tar.gz my_folder
+
+where
+
+-c means "create"
+-v means "verbose" (sometimes bothersome and slowing down...)
+-z means "use (GNU)zip"
+-f XYZ declares the name of the output file. (You should chose a helping name like XYZ.tar.gz)
+There may also be .tar.bz2 endings. This is the product of the -j parameter instead of the -z parameter: you will choose compression with BZIP2 (-> man bzip2).
+
+To extract you simply use -x (eXtract) instead of -c (Create):
+
+tar -xvzf may_arch.tar.gz
+
+
+
+
+4 command to zip multiple directories into individual zip files
+
+https://unix.stackexchange.com/questions/68489/command-to-zip-multiple-directories-into-individual-zip-files
+
+for i in */; do zip -r "${i%/}.zip" "$i"; done
+
+i is the name of the loop variable. */ means every subdirectory of the current directory, and will include a trailing slash in those names. 
+Make sure you cd to the right place before executing this. "$i" simply names that directory, including trailing slash. 
+The quotation marks ensure that whitespace in the directory name won't cause trouble. ${i%/} is like $i but with the trailing slash removed, 
+so you can use that to construct the name of the zip file.
+
+If you want to see how this works, include an echo before the zip and you will see the commands printed instead of executed.
+
+Parallel execution
+
+To run them in parallel you can use &:
+
+for i in */; do zip -0 -r "${i%/}.zip" "$i" & done; wait
+
+We use wait to tell the shell to wait for all background tasks to finish before exiting.
+
+Beware that if you have too many folders in your current directory, then you may overwhelm your computer 
+as this code does not limit the number of parallel tasks.
+
+
+5 How to compress multiple folders, each into its own zip archive?
+
+https://stackoverflow.com/questions/20452384/how-to-compress-multiple-folders-each-into-its-own-zip-archive
+
+
+for i in *
+do
+[ -d "$i" ] && zip -r "$i.zip" "$i"
+done
+You walk through all the directories and create zip for each of them.
+
+Or even more concise:
+
+for i in */; do zip -r "${i%/}.zip" "$i"; done
+(thanks to damienfrancois for suggestion).
+
+
+6 
+https://askubuntu.com/questions/777049/how-do-i-zip-up-multiple-files-on-command-line
+
+
 
