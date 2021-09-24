@@ -70,3 +70,19 @@ It's not just a matter of skill, either. The cost in terms of money and time nee
 in almost any commercial scenario. Aside from some very specific situations, it's not an economically viable way to produce software.
 
 
+3 Google shifting to “upstream first” Linux kernel approach for Android features
+https://news.ycombinator.com/item?id=28626757
+
+	
+kevincox 13 hours ago [–]
+
+This seems like the natural lifecycle.
+1. There are many features that we feel very valuable to our OS, so we will implement them and ship 
+our OS without blocking on upstream approval and acceptance. 
+2. Maintaining these patches is expensive. We will try to upstream as much as possible. 
+3. Most of our patches have been upstreamed and most new kernel requirements are lower priority, 
+we should prefer to upstream first to reduce the cost to migrate our OS from the original implementations to the upstreamed implementations.
+
+At no point does it seem that the decision was "wrong". Obviously carrying a bunch of patches has downsides 
+but at the earlier points in the OS lifecycle getting the features was probably much more valuable than the downsides were harmful.
+
