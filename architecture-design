@@ -165,3 +165,28 @@ https://mp.weixin.qq.com/s/Y8CJtF5jhuYK8_qwipy1RA
 45 深入理解HTTP2
 
 https://juejin.cn/post/6978415028168982541
+
+
+46 RPC latency distribution
+
+Frequency Trails: Modes and Modality
+https://www.brendangregg.com/FrequencyTrails/modes.html
+
+Tail Latency Might Matter More Than You Think
+https://brooker.co.za/blog/2021/04/19/latency.html
+
+The Tail at Scale
+https://xargin.com/tail-at-scale/
+
+Bimodal Multicast
+https://www.pdl.cmu.edu/SDI/1999/birmanSpr99.html
+paper
+
+http://www.cs.cornell.edu/courses/cs5412/2014sp/slides/XIX%20-%20Astrolabe.pdf
+
+https://en.jinzhao.wiki/wiki/Multimodal_distribution
+
+
+
+
+
