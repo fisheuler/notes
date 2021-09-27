@@ -208,6 +208,18 @@ https://cseweb.ucsd.edu/~dstefan/cse227-spring21/
 http://www.cse.psu.edu/~trj1/cse544-s18/
 
 
+38 Consistency Tradeoffs in Modern Distributed Database System  Design
+http://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf
+
+CAP, PACELC, and Determinism
+CAP and PACELC: Thinking More Clearly About Consistency
+https://brooker.co.za/blog/2014/07/16/pacelc.html
+
+You Can’t Sacrifice Partition Tolerance
+https://codahale.com/you-cant-sacrifice-partition-tolerance/
+
+CAP Theorem, PACELC, and Microservices
+https://ardalis.com/cap-pacelc-and-microservices/
 
 
 
