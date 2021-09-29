@@ -1,0 +1,80 @@
+DDIA
+https://timilearning.com/posts/ddia/part-two/chapter-9-1/
+
+https://timilearning.com/posts/ddia/part-two/chapter-9-2/#distributed-transactions-and-consensus
+
+https://timilearning.com/posts/ddia/part-two/chapter-7/
+
+
+Failure Detectors, and Non-Blocking Atomic Commit
+
+https://brooker.co.za/blog/2014/04/14/failure-detectors.html
+
+
+Atomic Broadcast
+https://en.jinzhao.wiki/wiki/Atomic_commit
+
+https://en.jinzhao.wiki/wiki/Atomic_broadcast
+
+Consensus
+https://en.jinzhao.wiki/wiki/Consensus_(computer_science)
+
+
+
+BroadCast
+https://www.cs.yale.edu/homes/aspnes/pinewiki/Broadcast.html
+
+
+请问分布式事务一致性与raft或paxos协议解决的一致性问题是同一回事吗？
+
+https://www.zhihu.com/question/275845393
+
+
+Consensus in Asynchronous Distributed Systems: A Concise Guided Tour
+https://www.cs.cornell.edu/courses/cs734/2000FA/cached%20papers/ConsensusGuidedTour.pdf
+
+
+
+Revisiting the relationship between non-blocking atomic commitment and consensus
+
+
+条分缕析分布式：到底什么是一致性？
+https://mp.weixin.qq.com/s/qnvl_msvw0XL7hFezo2F4w
+
+
+Uniform consensus
+https://en.jinzhao.wiki/wiki/Uniform_consensus
+
+
+
+Understanding Non-Blocking Atomic Commitment
+http://www.cs.unibo.it/~babaoglu/papers/pdf/commit.pdf
+
+
+Parallel Commits: An Atomic Commit Protocol For Globally Distributed Transactions
+https://www.cockroachlabs.com/blog/parallel-commits/
+
+
+分布式事务
+http://icyfenix.cn/architect-perspective/general-architecture/transaction/distributed.html
+
+
+Concurrency Control and Recovery in Database Systems
+https://courses.cs.washington.edu/courses/cse551/09au/papers/CSE550BHG-Ch7.pdf
+
+
+分布式事务之两阶段提交
+http://duanple.com/?p=56
+
+两阶段提交协议（2PC）
+https://helloyoubeautifulthing.net/blog/2020/10/09/two-phase-commit-protocol/
+
+
+Consensus on Transaction Commit
+https://dsf.berkeley.edu/cs286/papers/paxoscommit-tods2006.pdf
+https://fuzhe1989.github.io/2021/03/16/consensus-on-transaction-commit/
+
+
+
+Atomic broadcast
+https://en.jinzhao.wiki/wiki/Atomic_broadcast
